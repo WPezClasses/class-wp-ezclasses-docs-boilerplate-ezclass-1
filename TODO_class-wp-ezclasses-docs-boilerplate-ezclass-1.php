@@ -75,7 +75,13 @@ if ( ! class_exists('Class_WP_ezClasses_TODO-FOLDER_TODO-Product_#') ) {
 	 */
 	protected function init_defaults(){
 	
-	  $arr_defaults = array();
+	  $arr_defaults = array(
+	  
+	  	'active'			 					=> true,
+		'active_true'							=> true,	// use the active true "filtering"
+		'filters'								=> false, 	// currently NA
+		'arr_arg_validation'					=> false, 	// currently NA
+		);
 	
 	  return $arr_defaults;
 	}
